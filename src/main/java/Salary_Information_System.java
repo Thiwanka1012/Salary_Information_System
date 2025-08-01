@@ -103,7 +103,7 @@ public class Salary_Information_System {
             System.out.print("Enter Employer Name:");
             employerName= input.nextLine();
 
-            System.out.print("Enter Employer Salary");
+            System.out.print("Enter Employer Salary:");
             salary= input.nextDouble();
 
 
