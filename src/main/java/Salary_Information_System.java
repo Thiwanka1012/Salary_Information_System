@@ -9,6 +9,7 @@ public class Salary_Information_System {
         System.out.println("---------------------------------------------------");
 
 
+        //Select Option
         System.out.println("1)Calculate Income Tax:");
         System.out.println("2)Calculate Annual Bonus:");
         System.out.println("3)Calculate Loan Amount:");
@@ -16,12 +17,14 @@ public class Salary_Information_System {
         System.out.print("Please Select Option(1,2,3):");
         int option=input.nextInt();
 
+        //Option 1
         if (option==1){
             System.out.println("------------------------------------------------");
             System.out.println("|             Calculate Income Tax             |");
             System.out.println("------------------------------------------------");
 
             input.nextLine();
+
 
             System.out.print("Input Employer Name:");
             String employerName= input.nextLine();
@@ -31,6 +34,7 @@ public class Salary_Information_System {
 
             double tax = 0;
 
+            //Tax Calculation process
             if (salary <= 100000) {
                 tax = 0;
             } else if (salary <= 141667) {
@@ -47,11 +51,14 @@ public class Salary_Information_System {
                 tax = (41667 * 0.06) + (41667 * 0.12) + (41667 * 0.18) + (41667 * 0.24) + (41667 * 0.30) + (salary - 308333) * 0.36;
             }
 
+
+            //Outputs
             System.out.println("Employer Name " + employerName);
             System.out.println("Employer Salary:"+"Rs"+salary);
             System.out.println("You Have to Pay income Tax per Month:"+" "+"Rs"+Math.round(tax));
 
 
+        //Option 2
         } else if (option==2) {
 
             System.out.println("----------------------------------------------");
@@ -70,6 +77,7 @@ public class Salary_Information_System {
             System.out.print("Enter Employer Salary:");
             salary= input.nextDouble();
 
+            //Bonus Calculation Process
             if (salary < 100000) {
                 bonus = 5000;
             } else if (salary <= 199999) {
@@ -82,6 +90,7 @@ public class Salary_Information_System {
                 bonus = salary * 0.35;
             }
 
+            //Outputs
             System.out.println("Employer Name " + employerName);
             System.out.println("Employer Salary:"+"Rs"+salary);
             System.out.println("Annual Bonus:"+" "+"Rs"+ Math.round(bonus));
@@ -89,7 +98,7 @@ public class Salary_Information_System {
 
 
 
-
+    //Option 3
     } else if (option==3) {
             System.out.println("--------------------------------------------");
             System.out.println("|          Calculate Loan Amount            ");
@@ -107,6 +116,7 @@ public class Salary_Information_System {
             salary= input.nextDouble();
 
 
+            //Loan Calculation Process
             if (salary <= 50000) {
                 System.out.println("Sorry, salary less Than Rs 50000.Because You can't get a loan");
             } else {
@@ -127,6 +137,7 @@ public class Salary_Information_System {
                     // round to nearest 1000
                     long roundedLoan = Math.round(loanAmount / 1000.0) * 1000;
 
+                    //Outputs
                     System.out.println("Employer Name " + employerName);
                     System.out.println("Employer Salary:"+"Rs"+salary);
                     System.out.println("You can get loan Amount"+" "+"Rs"+ roundedLoan);
@@ -136,7 +147,7 @@ public class Salary_Information_System {
 
         }
 
-
+    //Any other Options
     }else {
             System.out.println("Please Invalid Input,Try Again...");
         }

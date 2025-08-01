@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b978c62-00a3-4726-82f5-3e98439a4437" name="Changes" comment="Create Main Class and Create Input Scanner.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Salary_Information_System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Salary_Information_System.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754052228588</updated>
-      <workItem from="1754052229648" duration="2139000" />
+      <workItem from="1754052229648" duration="2494000" />
     </task>
     <task id="LOCAL-00001" summary="Create Main Class">
       <option name="closed" value="true" />
