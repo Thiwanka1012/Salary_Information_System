@@ -49,7 +49,7 @@ public class Salary_Information_System {
 
             System.out.println("Employer Name " + employerName);
             System.out.println("Employer Salary:"+"Rs"+salary);
-            System.out.println("You Have to Pay income Tax per Month:"+"rs"+Math.round(tax));
+            System.out.println("You Have to Pay income Tax per Month:"+" "+"Rs"+Math.round(tax));
 
 
         } else if (option==2) {
@@ -84,7 +84,7 @@ public class Salary_Information_System {
 
             System.out.println("Employer Name " + employerName);
             System.out.println("Employer Salary:"+"Rs"+salary);
-            System.out.println("Annual Bonus:"+"Rs"+ Math.round(bonus));
+            System.out.println("Annual Bonus:"+" "+"Rs"+ Math.round(bonus));
 
 
 
@@ -129,9 +129,9 @@ public class Salary_Information_System {
 
                     System.out.println("Employer Name " + employerName);
                     System.out.println("Employer Salary:"+"Rs"+salary);
-                    System.out.println("You can get loan Amount"+"Rs"+ roundedLoan);
+                    System.out.println("You can get loan Amount"+" "+"Rs"+ roundedLoan);
 
-                    
+
                 }
 
         }
