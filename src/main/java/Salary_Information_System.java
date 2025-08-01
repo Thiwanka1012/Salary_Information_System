@@ -85,7 +85,7 @@ public class Salary_Information_System {
             System.out.println("Employer Name " + employerName);
             System.out.println("Employer Salary:"+"Rs"+salary);
             System.out.println("Annual Bonus:"+"Rs"+ Math.round(bonus));
-            
+
 
 
 
@@ -127,7 +127,11 @@ public class Salary_Information_System {
                     // round to nearest 1000
                     long roundedLoan = Math.round(loanAmount / 1000.0) * 1000;
 
-                    System.out.println("Loan amount for " + employerName + " is Rs. " + roundedLoan);
+                    System.out.println("Employer Name " + employerName);
+                    System.out.println("Employer Salary:"+"Rs"+salary);
+                    System.out.println("You can get loan Amount"+"Rs"+ roundedLoan);
+
+                    
                 }
 
         }
