@@ -108,7 +108,7 @@ public class Salary_Information_System {
 
 
             if (salary <= 50000) {
-                System.out.println("Sorry, salary too low to get a loan.");
+                System.out.println("Sorry, salary less Than Rs 50000.Because You can't get a loan");
             } else {
                 System.out.print("Enter loan period (years, max 5): ");
                 int years = input.nextInt();
