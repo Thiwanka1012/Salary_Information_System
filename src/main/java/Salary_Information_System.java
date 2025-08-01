@@ -84,9 +84,51 @@ public class Salary_Information_System {
 
 
 
-    }
+    } else if (option==3) {
+            System.out.println("--------------------------------------------");
+            System.out.println("|          Calculate Loan Amount            ");
+            System.out.println("--------------------------------------------");
+
+            input.nextLine();
+
+            double salary;
+            String employerName;
+
+            System.out.print("Enter Employer Name:");
+            employerName= input.nextLine();
+
+            System.out.print("Enter Employer Salary");
+            salary= input.nextDouble();
 
 
+            if (salary <= 50000) {
+                System.out.println("Sorry, salary too low to get a loan.");
+            } else {
+                System.out.print("Enter loan period (years, max 5): ");
+                int years = input.nextInt();
 
-    }
+                if (years > 5) {
+                    System.out.println("Sorry, max loan period is 5 years.");
+                } else {
+                    double monthlyInstallment = salary * 0.6;
+                    int months = years * 12;
+                    double interestRate = 0.15;
+
+                    double totalAmount = monthlyInstallment * months;
+                    double interest = totalAmount * interestRate;
+                    double loanAmount = totalAmount - interest;
+
+                    // round to nearest 1000
+                    long roundedLoan = Math.round(loanAmount / 1000.0) * 1000;
+
+                    System.out.println("Loan amount for " + employerName + " is Rs. " + roundedLoan);
+                }
+
+        }
+
+
+    }else {
+            System.out.println("Please Invalid Input,Try Again...");
+        }
+}
 }
