@@ -31,6 +31,27 @@ public class Salary_Information_System {
 
             double tax = 0;
 
+            if (salary <= 100000) {
+                tax = 0;
+            } else if (salary <= 141667) {
+                tax = (salary - 100000) * 0.06;
+            } else if (salary <= 183333) {
+                tax = (41667 * 0.06) + (salary - 141667) * 0.12;
+            } else if (salary <= 225000) {
+                tax = (41667 * 0.06) + (41667 * 0.12) + (salary - 183333) * 0.18;
+            } else if (salary <= 266667) {
+                tax = (41667 * 0.06) + (41667 * 0.12) + (41667 * 0.18) + (salary - 225000) * 0.24;
+            } else if (salary <= 308333) {
+                tax = (41667 * 0.06) + (41667 * 0.12) + (41667 * 0.18) + (41667 * 0.24) + (salary - 266667) * 0.30;
+            } else {
+                tax = (41667 * 0.06) + (41667 * 0.12) + (41667 * 0.18) + (41667 * 0.24) + (41667 * 0.30) + (salary - 308333) * 0.36;
+            }
+
+            System.out.println("Income Tax for " + employerName + " is Rs. " + Math.round(tax));
+
+        }
+
+
 
     }
 }
