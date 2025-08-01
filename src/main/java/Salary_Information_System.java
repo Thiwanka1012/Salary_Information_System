@@ -49,7 +49,42 @@ public class Salary_Information_System {
 
             System.out.println("Income Tax for " + employerName + " is Rs. " + Math.round(tax));
 
-        }
+        } else if (option==2) {
+
+            System.out.println("----------------------------------------------");
+            System.out.println("|            Calculate Annual Bonus           ");
+            System.out.println("----------------------------------------------");
+
+            input.nextLine();
+
+            String employerName;
+            double salary;
+            double bonus = 0;
+
+            System.out.print("Enter Employer Name:");
+            employerName= input.nextLine();
+
+            System.out.print("Enter Employer Salary:");
+            salary= input.nextDouble();
+
+            if (salary < 100000) {
+                bonus = 5000;
+            } else if (salary <= 199999) {
+                bonus = salary * 0.10;
+            } else if (salary <= 299999) {
+                bonus = salary * 0.15;
+            } else if (salary <= 399999) {
+                bonus = salary * 0.20;
+            } else {
+                bonus = salary * 0.35;
+            }
+
+            System.out.println("Annual Bonus for " + employerName + " is Rs. " + Math.round(bonus));
+
+
+
+
+    }
 
 
 
