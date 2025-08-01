@@ -47,7 +47,10 @@ public class Salary_Information_System {
                 tax = (41667 * 0.06) + (41667 * 0.12) + (41667 * 0.18) + (41667 * 0.24) + (41667 * 0.30) + (salary - 308333) * 0.36;
             }
 
-            System.out.println("Income Tax for " + employerName + " is Rs. " + Math.round(tax));
+            System.out.println("Employer Name " + employerName);
+            System.out.println("Employer Salary:"+"Rs"+salary);
+            System.out.println("You Have to Pay income Tax per Month:"+"rs"+Math.round(tax));
+
 
         } else if (option==2) {
 
@@ -79,7 +82,10 @@ public class Salary_Information_System {
                 bonus = salary * 0.35;
             }
 
-            System.out.println("Annual Bonus for " + employerName + " is Rs. " + Math.round(bonus));
+            System.out.println("Employer Name " + employerName);
+            System.out.println("Employer Salary:"+"Rs"+salary);
+            System.out.println("Annual Bonus:"+"Rs"+ Math.round(bonus));
+            
 
 
 
